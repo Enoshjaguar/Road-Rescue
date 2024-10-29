@@ -1,0 +1,1084 @@
+.signup-container {
+    
+    width: 320px;
+    margin-top: 100px;
+    margin-left: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    border-color: #ccc;
+}
+
+body {
+    
+    color: black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+p,
+li,
+span,
+a {
+    font-weight: 200;
+}
+
+.signup-container h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.signup-container label {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.signup-container #submit {
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 100px;
+    border: 3px solid #ccc;
+    border-radius: 7px;
+    color: black;
+    background-color: #fff;
+}
+
+.signup-container #submit:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar img {
+    width: 120px;
+    height: 90px;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+}
+
+.navbar ul {
+    float: right;
+    display: flex;
+    gap: 50px;
+    margin-right: 30px;
+    margin-top: 30px;
+    list-style-type: none;
+
+}
+
+.navbar ul a:hover {
+    color: #32c888;
+}
+.about{
+    width: 100%;
+    height: 400px;
+    margin-top: 220px;    
+}
+.navbar ul a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 17px;
+}
+
+.home-container h1 {
+    margin-left: 130px;
+    font-size: 100px;
+    font-weight: 600;
+    position: relative;
+    top: 100px;
+}
+
+.home-container span {
+    color: #32c888;
+}
+
+.home-container p {
+    margin-left: 130px;
+    position: relative;
+    bottom: 70px;
+    font-size: 25px;
+    position: relative;
+    top: 60px;
+}
+
+.home-container img {
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home-container button {
+    position: relative;
+    left: 130px;
+    padding: 5px;
+    top: 80px;
+    background-color: #32c888;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    width: 140px;
+    height: 50px;
+}
+
+.home-container button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.about-container {
+    width: 80%;
+    height: auto;
+    margin: 0;
+}
+
+.about-container h1 {
+    position: relative;
+    left: 120px;
+    top: 80px;
+    font-size: 40px;
+}
+
+.about-container h2 {
+    position: relative;
+    left: 200px;
+    top: 80px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.about-container img {
+    position: relative;
+    left: 200px;
+    top: 80px;
+    border-radius: 9px;
+    border: 4px solid #ccc;
+    width: 600px;
+    transition: width 0.5s ease;
+}
+
+.about-container img:hover {
+    width: 750px;
+    height: auto;
+    cursor: pointer;
+}
+
+.donthaveacc {
+    position: relative;
+    left: 37px;
+}
+
+.donthaveacc a {
+    text-decoration: none;
+}
+
+.navname {
+    position: relative;
+    right: 780px;
+    bottom: 35px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.about{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-left: 120px;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.image-container{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.about .image-container img{
+    width: 600px;
+    height: 350px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    transition: opacity 0.3s ease;
+}
+.about .image-container img:hover{
+    opacity: 0.3;
+}
+.about .image-container{
+    position: relative;
+}
+.image-container:hover{
+    cursor: pointer;
+}
+.image-container .image-text{
+    width: 400px;
+    position: absolute;
+    border-radius: 20px;
+    top: 20%;
+    left: 10%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: #fff;
+    transition: opacity 0.3s ease;
+    
+}
+.image-container:hover .image-text{
+    opacity: 1;
+}
+.image-container:hover img{
+    opacity: 0.3;
+}
+.matter {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+    margin-top: 120px;
+}
+
+
+.matter .matter1 {
+    width: 41%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.matter .matter2 {
+    width: 41%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.matter4 h2 {
+    color: #32c888;
+}
+
+.mattersecondrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 120px;
+}
+
+.mattersecondrow .matter3 {
+    width: 41%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.mattersecondrow .matter4 {
+    width: 41%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.matter1 span {
+    color: #32c888;
+}
+
+.services .water-wash {
+    width: 50%;
+    height: 340px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 40px;
+    margin-top: 40px;
+    line-height: 28px;
+    display: inline-block;
+}
+
+.services .water-wash img {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    left: 850px;
+    bottom: 300px;
+    border-radius: 60px;
+
+}
+
+.services .water-wash button {
+    position: relative;
+    top: 245px;
+    left: 15px;
+    height: 35px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 7px;
+
+}
+
+.services .water-wash button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.water-wash h3 {
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #32c888;
+    margin-left: 15px;
+}
+
+.water-wash p {
+    margin-top: 0;
+    position: relative;
+    bottom: 15px;
+}
+
+.services .tyre-puncture {
+    width: 50%;
+    height: 340px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 730px;
+    margin-top: 0px;
+    line-height: 28px;
+    display: inline-block;
+    position: relative;
+    bottom: 150px;
+}
+
+.services .tyre-puncture h3 {
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #32c888;
+    margin-left: 15px;
+}
+
+.services .tyre-puncture button {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    height: 35px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 7px;
+}
+
+.services .tyre-puncture button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.tyre-puncture img {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    right: 700px;
+    bottom: 300px;
+    border-radius: 60px;
+}
+
+.services .lock-out {
+    width: 50%;
+    height: 340px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 300px;
+    line-height: 28px;
+    display: inline-block;
+
+}
+
+.services .lock-out h3 {
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #32c888;
+    margin-left: 15px;
+}
+
+.services .lock-out button {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    height: 35px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 7px;
+}
+
+.services .lock-out button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.services .lock-out img {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    left: 850px;
+    bottom: 250px;
+    border-radius: 60px;
+}
+
+.services .break-repair {
+    width: 50%;
+    height: 340px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 730px;
+    line-height: 28px;
+    display: inline-block;
+    position: relative;
+    bottom: 430px;
+}
+
+.services .break-repair h3 {
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #32c888;
+    margin-left: 15px;
+}
+
+.services .break-repair button {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    height: 35px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 7px;
+}
+
+.services .break-repair button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.services .break-repair img {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    right: 700px;
+    bottom: 270px;
+    border-radius: 60px;
+    border: 1px solid gray;
+}
+
+.services .chain-repair {
+    width: 50%;
+    height: 340px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 600px;
+    line-height: 28px;
+    display: inline-block;
+}
+
+.services .chain-repair h3 {
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #32c888;
+    margin-left: 15px;
+}
+
+.services .chain-repair button {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    height: 35px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 7px;
+}
+
+.services .chain-repair button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.services .chain-repair img {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    left: 850px;
+    bottom: 250px;
+    border-radius: 60px;
+
+}
+
+.services .engine-failure {
+    width: 50%;
+    height: 340px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 730px;
+    line-height: 28px;
+    display: inline-block;
+    position: relative;
+    bottom: 750px;
+}
+
+.services .engine-failure h3 {
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #32c888;
+    margin-left: 15px;
+}
+
+.services .engine-failure button {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    height: 35px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 7px;
+}
+
+.services .engine-failure button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.services .engine-failure img {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    position: relative;
+    right: 700px;
+    bottom: 250px;
+    border-radius: 60px;
+    border: 1px solid gray;
+}
+
+.waterwashcontainer {
+    width: 40%;
+    height: 550px;
+    object-fit: cover;
+
+    position: relative;
+    left: 70px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.waterwashcontainer img {
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 15px;
+
+}
+
+.bikewashprice {
+    position: relative;
+    left: 800px;
+    bottom: 350px;
+
+    width: 40%;
+    height: 300px;
+
+}
+
+.bikewashprice h1 {
+    color: #32c888;
+}
+
+.bikewashprice h2 span {
+    color: #32c888;
+}
+
+.bikewashprice button {
+    color: #fff;
+    background-color: #32c888;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.bikewashprice button a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.carwashimg {
+    width: 40%;
+    height: 550px;
+    object-fit: cover;
+
+    position: relative;
+    left: 70px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.booking-form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+
+.booking-form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+
+.booking-form button:active {
+    background-color: #004085;
+}
+
+.booking-form input,
+.booking-form button {
+    display: block;
+    margin: 0 auto;
+}
+
+.welcomeadmin span {
+    color: #32c888;
+}
+
+.carwashprice button a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.carwashimg img {
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    position: relative;
+    bottom: 280px;
+}
+
+.carwashprice {
+    position: relative;
+    left: 800px;
+    bottom: 650px;
+
+    width: 40%;
+    height: 300px;
+}
+
+.carwashprice h1 {
+    color: #32c888;
+}
+
+.carwashprice h2 span {
+    color: #32c888;
+}
+
+.carwashprice button {
+    color: #fff;
+    background-color: #32c888;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.totalwaterwashcontainer {
+    width: 100%;
+    height: 50%;
+}
+
+.logout {
+    position: relative;
+
+}
+
+.home-container .adminloginbtn {
+    position: relative;
+    left: 960px;
+    top: 180px;
+    font-size: 18px;
+}
+.displayreviews{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.review-card{
+    width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.addreviewbtn{
+    padding: 10px 20px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 10px;
+}
+.addreviewbtn a{
+    text-decoration: none;
+    color: #fff;
+}
+.review-card span{
+    color: #32c888;
+}
+.displaybookings {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+.displaybookings .booking-card h1{
+    color: #32c888;
+}
+
+.displaybookings .booking-card {
+    width: 500px;
+    height: 270px;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.displaybookings .booking-card button{
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #32c888;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.bikewaterwashcontainer h1 {
+    color: #32c888;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.bikewaterwashcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.bikewaterwashcontainer p {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.bikewaterwashcontainer img {
+    width: 30%;
+    height: 300px;
+    margin-top: 120px; 
+}
+
+.bikewashbookingbutton a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bikewashbookingbutton {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    bottom: 100px;
+    right: 750px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.displaybookings h1 {
+    color: #32c888;
+    margin-left: 20px;
+}
+
+.displaybookings h3,
+p {
+    margin-left: 10px;
+}
+
+.tyrepuncturecontainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tyrepuncturecontainer img {
+    width: 25%;
+    height: auto;
+}
+
+.tyrepbtn {
+    color: #fff;
+    background-color: #32c888;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    left: 650px;
+    top: 50px;
+}
+.tyrepbtn a{
+    text-decoration: none;
+    color: #fff;
+}
+.lockoutcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+.lockoutcontainer img{
+    width: 36%;
+    height: 350px;
+}
+.lockoutbtn{
+    width: 190px;
+    height: 38px;
+    position: absolute;
+    bottom: 100px;
+    right: 750px;
+    background-color: #32c888;
+    border: none;
+    border-radius: 15px;
+}
+.lockoutbtn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.lockoutcontainer p{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.breakfailurecontainer img{
+    width: 35%;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    
+}
+.breakfailurecontainer h1{
+    color: #32c888;
+    font-size: 50px;
+}
+.breakfailurecontainer p{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    text-decoration: underline;
+}
+.breakfailurecontainer button{
+    position: absolute;
+    left: 45%;
+    bottom: 50px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #32c888;
+    color: #fff;
+}
+.breakfailurecontainer button:hover{
+    cursor: pointer;
+}
+.breakfailurecontainer button a{
+    text-decoration: none;
+    color: #fff;
+}
+.reviewinput{
+   position: relative;
+   top: 100px;
+   width: 400px;
+   height: auto;
+   left: 100px;
+}
+.reviewsubmitbtn{
+   padding: 8px 18px;
+   color: #fff;
+   background-color: #32c888;
+   border: none;
+   border-radius: 10px;
+   position: relative;
+   top: 150px;
+   right: 170px;
+}
+.reviewform{
+    position: relative;
+    top: 50px;
+}
+.sparepartscontainer{
+    width: 30%;
+    height: auto;
+    border: 1px solid #ccc;
+    position: relative;
+    left: 500px;
+    border-radius: 15px;
+}
+.sparepartscontainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sparepartscontainer input[type="number"],
+.sparepartscontainer input[type="file"],
+.sparepartscontainer input[type="text"]{
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.sparepartscontainer input[type="submit"]{
+    width: 30%;
+    margin-left: 160px;
+    background-color: #32c888;
+    color: white;
+}
+.sparepartscontainer input[type="submit"]:hover{
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sparepartscontainer label{
+    font-size: 17px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.spare-parts{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;  
+    position: relative;
+    
+}
+.spare-part{
+    width: 600px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    border-radius: 15px;
+  
+}
+.spare-parts .spare-part img{
+    width: 270px;
+    height: 190px;
+    margin-left: 130px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.spare-parts .spare-part span{
+    color: #32c888;
+    font-size: 20px;
+}
+.spare-parts .spare-part h2{
+    color: #32c888;
+}
+.spare-parts .spare-part button a{
+    text-decoration: none;
+}

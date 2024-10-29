@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .confirmation-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .confirmation-container h1 {
+            font-size: 2rem;
+            color: #1f8b4c;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-container p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .mechanic-image {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 50%;
+            background: url('https://img.icons8.com/clouds/100/000000/mechanic.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        .thank-you-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1f8b4c;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .thank-you-button:hover {
+            background-color: #166534;
+        }
+    </style>
+</head>
+<body>
+
+<div class="confirmation-container">
+    <div class="mechanic-image"></div>
+    <h1>Thank You for Choosing Us!</h1>
+    <p>Your booking has been placed successfully. Our mechanic will reach you soon.</p>
+    <p>We appreciate your trust in our service.</p>
+    <a href="book" class="thank-you-button">Back</a>
+</div>
+
+</body>
+</html>

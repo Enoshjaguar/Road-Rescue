@@ -1,0 +1,33 @@
+<%- include('./layout/header') %>
+
+<div class="navbar">
+    <nav>
+        <img src="/images/tools2.avif" alt="">
+        <ul>
+            <li><a href="home">Home</a></li>
+            
+            <li><a href="bookings">Bookings</a></li>
+            <li><a href="">History</a></li>
+            <li><a href="addspareparts">Spare Parts</a></li>
+            <li><a href="">Cart</a></li>
+            
+            
+        </ul>
+    </nav>
+    <h1>Available Spare Parts</h1>
+
+    <div class="spare-parts">
+        <% spareparts.forEach(sparePart => { %>
+          <div class="spare-part">
+              <h2><%= sparePart.sparepartname %></h2>
+              <p><span>Price:</span> Rs : <%= sparePart.sparepartprice %></p>
+              <p> <span>Description: </span><%= sparePart.sparepartdescription %></p>
+              <img src="/<%= sparePart.sparepartimage %>" class="sparepartimg" alt="<%= sparePart.sparepartname %> image">
+              
+              
+          </div>
+        <% }) %>
+       
+    </div>
+</body>
+</html>

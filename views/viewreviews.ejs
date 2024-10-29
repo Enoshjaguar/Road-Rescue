@@ -1,0 +1,13 @@
+<%- include('./layout/header') %>
+<%- include('./layout/navbar') %>
+<h2>Reviews</h2>
+<button class="addreviewbtn"><a href="reviews">Add Review</a></button>
+<div class="displayreviews">
+    <% review.forEach(reviews => { %>
+        <div class="review-card">
+            <h3><span>Rating:</span> <%= reviews.rating %></h3>
+            <h3> <span>Experience : </span><%= reviews.review %></h3>
+            <h3> <span>Review : </span><%= reviews.reviewText %></h3>
+        </div>
+    <% }); %>
+</div>

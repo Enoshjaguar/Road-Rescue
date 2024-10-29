@@ -1,0 +1,33 @@
+<%- include('./layout/header') %>
+
+<div class="navbar">
+    <nav>
+        <img src="/images/tools2.avif" alt="">
+        <ul>
+            <li><a href="home">Home</a></li>            
+            <li><a href="bookings">Bookings</a></li>
+            <li><a href="">History</a></li>
+            <li><a href="addspareparts">Spare Parts</a></li>
+            
+            
+        </ul>
+    </nav>
+    <h1 class="welcomeadmin">Spare <span>Parts</span> </h1>
+    <div class="sparepartscontainer">
+        
+    <form action="/addsparepart" method="post" enctype="multipart/form-data">
+        <label for="">Spare Part Name : </label>
+        <input type="text" name="sparepartname" id="sparepartname">
+        <label for="">Price : </label>
+        <input type="number" name="sparepartprice" id="sparepartprice">
+        <label for="">Description : </label>
+        <input type="text" name="sparepartdescription" id="sparepartdescription">
+        <label for="">Image : </label>
+        <input type="file" name="sparepartimage" id="sparepartimage">
+        <input type="submit" name="" id="">
+    </form>
+    </div>
+</div>
+</body>
+
+</html>

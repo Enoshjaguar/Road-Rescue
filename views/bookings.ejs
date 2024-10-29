@@ -1,0 +1,27 @@
+<%- include('./layout/header') %>
+
+<div class="navbar">
+  <nav>
+    <img src="/images/tools2.avif" alt="Tools" />
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/history">History</a></li>
+    </ul>
+  </nav>
+  <h1 class="welcomeadmin"><span>ENOSH</span></h1>
+</div>
+
+<div class="displaybookings">
+  <% bookings.forEach(booking => { %>
+  <div class="booking-card">
+    <h1><%= booking.vehicle %></h1>
+    <h3><strong>Name:</strong><%= booking.name %></h3>
+    <p><strong>Location:</strong> <%= booking.location %></p>
+    <p><strong>Mobile:</strong> <%= booking.mobile %></p>
+  
+    <button>Confirm</button>
+    <button >Cancel</button>
+    
+  </div>
+  <% }); %>
+</div>

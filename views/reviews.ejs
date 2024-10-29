@@ -1,0 +1,33 @@
+<%- include('./layout/header') %>
+<%- include('./layout/navbar') %>
+<h1>Write a Review</h1>
+
+<div class="reviewcontainer">
+    <h3>How is your experience</h3>
+<form action="/reviews" method="POST" class="reviewform">
+    <label for="">
+        <input type="radio" name="review" value="Bad">Bad
+    </label>
+    <label for=""></label>
+        <input type="radio" name="review" value="Average">Average
+    </label>
+    <label for=""></label>
+        <input type="radio" name="review" value="Good">Good
+    </label>
+    <label for=""></label>
+        <input type="radio" name="review" value="Awesome">Awesome
+    </label>
+    <select name="rating" id="" >
+        <option value="">Rating</option>
+        <option value="1 Star" name="rating">1 Star</option>
+        <option value="2 Star" name="rating">2 Star</option>
+        <option value="3 Star" name="rating">3 Star</option>
+        <option value="4 Star" name="rating">4 Star</option>
+        <option value="5 Star" name="rating">5 Star</option>
+    </select>
+    <input type="text" name="reviewText"  placeholder="please write your review" class="reviewinput">
+    <button type="submit" class="reviewsubmitbtn">Submit</button>
+</form> 
+
+
+</div>

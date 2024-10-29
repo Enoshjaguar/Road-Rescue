@@ -1,0 +1,18 @@
+<%- include('./layout/header') %>
+<%- include('./layout/navbar') %>
+<div class="booking-form">
+<form action="booking" method="POST">
+    <label for="name">Name : </label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="location">Location :</label>
+    <input type="text" id="location" name="location" required><br><br>
+    
+    <label for="mobile">Mobile :</label>
+    <input type="text" id="mobile" name="mobile" required><br><br>
+    
+    <input type="hidden" value="Car-Water-Wash" name="vehicle">
+    
+    <button type="submit">Submit</button>
+</form>
+</div>

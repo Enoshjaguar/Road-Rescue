@@ -1,0 +1,23 @@
+<%- include('./layout/header') %>
+<%- include('./layout/navbar') %>
+
+<div class="booking-form">
+<form action="puncturebooking" method="POST">
+    <label for="name">Name : </label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="location">Location :</label>
+    <input type="text" id="location" name="location" required><br><br>
+    
+    <label for="mobile">Mobile :</label>
+    <input type="text" id="mobile" name="mobile" required><br><br>
+    <label for="vehicle">Choose a Vehicle :</label>
+    <select name="vehicle" id="vehicle" required>
+        <option value="Bike Tyre Puncture">Bike</option>
+        <option value="Car Tyre Puncture">Car</option>
+        <option value="Auto Tyre Puncture">Auto</option>
+    </select>
+    
+    <button type="submit">Submit</button>
+</form>
+</div>
